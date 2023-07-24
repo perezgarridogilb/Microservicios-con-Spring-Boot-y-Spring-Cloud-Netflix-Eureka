@@ -1,7 +1,7 @@
 package com.formacionbdi.springboot.app.item.springbootservicioitem.models;
 
 /** Generar item a partir de producto */
-public class item {
+public class Item {
     private Producto producto;
     private Integer cantidad;
 
@@ -9,7 +9,7 @@ public class item {
 
     }
 
-    public item(Producto producto, Integer cantidad) {
+    public Item(Producto producto, Integer cantidad) {
         this.producto = producto;
         this.cantidad = cantidad;
     }
