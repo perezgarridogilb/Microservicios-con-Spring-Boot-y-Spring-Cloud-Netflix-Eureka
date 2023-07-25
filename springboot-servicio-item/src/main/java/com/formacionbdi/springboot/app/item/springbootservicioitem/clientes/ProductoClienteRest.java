@@ -13,7 +13,7 @@ import com.formacionbdi.springboot.app.item.springbootservicioitem.models.Produc
  * 
  * Implementando el cliente rest
  */
-@FeignClient(name = "servicio-productos", url = "localhost:8001")
+@FeignClient(name = "servicio-productos")
 public interface ProductoClienteRest {
     @GetMapping("/listar")
     public List<Producto> listar();
