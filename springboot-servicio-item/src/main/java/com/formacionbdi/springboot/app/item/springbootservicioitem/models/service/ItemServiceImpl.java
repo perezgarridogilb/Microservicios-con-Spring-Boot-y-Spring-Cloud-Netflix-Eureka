@@ -15,7 +15,7 @@ import com.formacionbdi.springboot.app.item.springbootservicioitem.models.Produc
 
 
 
-@Service
+@Service("serviceRestTemplate")
 public class ItemServiceImpl implements ItemService {
 
     @Autowired
