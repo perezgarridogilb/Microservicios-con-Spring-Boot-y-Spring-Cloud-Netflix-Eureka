@@ -66,3 +66,7 @@ Basado en `http://localhost:8002/ver/2/cantidad/5`
         "createAt": null,
         
 ```
+
+- **Link**: https://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/2.0.1.RELEASE/single/spring-cloud-netflix.html#_hystrix_timeouts_and_ribbon_clients
+
+When using Hystrix commands that wrap Ribbon clients you want to make sure your Hystrix timeout is configured to be longer than the configured Ribbon timeout, including any potential retries that might be made. For example, if your Ribbon connection timeout is one second and the Ribbon client might retry the request three times, than your Hystrix timeout should be slightly more than three seconds.
