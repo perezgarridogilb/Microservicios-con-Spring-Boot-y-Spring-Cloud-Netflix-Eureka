@@ -70,3 +70,14 @@ Basado en `http://localhost:8002/ver/2/cantidad/5`
 - **Link**: https://cloud.spring.io/spring-cloud-static/spring-cloud-netflix/2.0.1.RELEASE/single/spring-cloud-netflix.html#_hystrix_timeouts_and_ribbon_clients
 
 When using Hystrix commands that wrap Ribbon clients you want to make sure your Hystrix timeout is configured to be longer than the configured Ribbon timeout, including any potential retries that might be made. For example, if your Ribbon connection timeout is one second and the Ribbon client might retry the request three times, than your Hystrix timeout should be slightly more than three seconds.
+
+## 
+Mediante zuul y con balanceo de carga
+*Un API Gateway (Puerta de Enlace de API) es un componente en la arquitectura de microservicios que actúa como un punto de entrada para todas las solicitudes de API provenientes de clientes externos. Su principal función es gestionar y dirigir las solicitudes entrantes a los diferentes microservicios y recursos internos de una aplicación, proporcionando una capa de abstracción entre los clientes y los servicios subyacentes*
+
+- Se configuró en: `http://localhost:8761/`
+<img width="1280" alt="Captura de Pantalla 2023-08-08 a la(s) 4 53 13 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/c354fb34-fcf3-4ea1-8fd1-19a9e7501135">
+- Cambia la puerta de enlace de cómo de venía trabajando en items y en productos
+<img width="1392" alt="Captura de Pantalla 2023-08-08 a la(s) 4 57 39 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/7489d712-ecb1-4326-ba05-154550438164">
+- Cambia la puerta de enlace de cómo de venía trabajando
+<img width="1392" alt="Captura de Pantalla 2023-08-08 a la(s) 4 55 13 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/32730584-6d1d-44f4-9763-7f396c798438">
