@@ -81,3 +81,8 @@ Mediante zuul y con balanceo de carga
 <img width="1392" alt="Captura de Pantalla 2023-08-08 a la(s) 4 57 39 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/7489d712-ecb1-4326-ba05-154550438164">
 - Cambia la puerta de enlace de cómo de venía trabajando
 <img width="1392" alt="Captura de Pantalla 2023-08-08 a la(s) 4 55 13 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/32730584-6d1d-44f4-9763-7f396c798438">
+
+- Se intercala instancia de productos con instancia de productos (utilizando Round Robbin) todo esto con balanceo de carga
+- Arquitectura microservicios centraliza todo
+
+## Zuul Filtro HTTP pre - Tiempo transcurrido

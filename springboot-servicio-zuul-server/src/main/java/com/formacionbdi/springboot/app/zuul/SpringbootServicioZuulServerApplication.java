@@ -1,4 +1,4 @@
-package com.formacionbdi.springboot.app.zuul.springbootserviciozuulserver;
+package com.formacionbdi.springboot.app.zuul;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

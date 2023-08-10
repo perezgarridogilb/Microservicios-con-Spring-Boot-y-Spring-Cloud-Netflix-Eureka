@@ -17,12 +17,13 @@ import com.formacionbdi.springboot.app.productos.models.service.IProductoService
 @RestController
 public class ProductoController {
 
+    /** Inyecta de property */
 	@Value("${server.port}")
 	private Integer port;
 
-    /*     
+         
     @Autowired
-    private Environment env; */
+    private Environment env; 
 
     @Autowired
     private IProductoService productoService;
@@ -30,8 +31,9 @@ public class ProductoController {
 	@GetMapping("/listar")
 	public List<Producto> listar(){
 		return productoService.findAll().stream().map(producto ->{
-		/* producto.setPort(Integer.parseInt(env.getProperty("local.server.port"))); */
-        producto.setPort(port);
+        /** Toma el puerto real */
+		producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
+        /* producto.setPort(port); */
 			return producto;
 		}).collect(Collectors.toList());
 	}
@@ -39,8 +41,8 @@ public class ProductoController {
 	@GetMapping("/ver/{id}")
 	public Producto detalle(@PathVariable Long id) {
 		Producto producto = productoService.findById(id);
-		//producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
-		producto.setPort(port);
+		producto.setPort(Integer.parseInt(env.getProperty("local.server.port")));
+		//producto.setPort(port);
         /*
         boolean ok = false;
         if (!ok) {
