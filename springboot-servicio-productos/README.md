@@ -86,3 +86,8 @@ Mediante zuul y con balanceo de carga
 - Arquitectura microservicios centraliza todo
 
 ## Zuul Filtro HTTP pre - Tiempo transcurrido
+
+## API Gateway
+### Zuul de Netflix y Spring Cloud de netflix
+
+<img width="1280" alt="Captura de Pantalla 2023-08-08 a la(s) 4 53 13 p m" src="https://github.com/perezgarridogilb/Sistema-Contable-con-Laravel/assets/56992179/63cb1843-c8f4-45c7-914b-008d081f142c">
